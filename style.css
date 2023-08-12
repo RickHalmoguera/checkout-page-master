@@ -1,1 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Montserrat;
+    font-weight: 600;
+}
+
+h1{
+    color: #4E5150;
+    font-size: 36px;
+}
+
+h2{
+    color: var(--gray-1, #333);
+    font-size: 18px;
+}
+
+label{
+    color: var(--gray-2, #4F4F4F);
+    font-size: 12px;
+}
+
+input{
+    border-radius: 12px;
+    border: 1px solid var(--gray-3, #828282);
+}
+
+select{
+    border-radius: 12px;
+    border: 1px solid var(--gray-3, #828282);
+}
+
+.c-continueBtn{
+    width: 166px;
+    height: 54px;           
+    border-radius: 12px;
+    background: var(--orange, #F2994A);
+    border: none;
+}
