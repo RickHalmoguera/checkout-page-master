@@ -7,129 +7,133 @@
     <link rel="stylesheet" href="./style.css">
     <title>Checkout Challenge</title>
   </head>
-  <div>
+  <body>
     <h1>Checkout</h1>
+    <div class="flex">
 
-    <div class="c-consumerInfo">
+      <div class="c-consumerInfo">
 
-      <div class="c-consumerInfo__contact">
-        <h2>Contact Information</h2>
-        <div class="c-input">
-          <i class="fa-solid fa-envelope"></i>
-          <label for="email">E-mail</label>
-          <input type="email" name="email" id="" placeholder="Enter you email...">
-        </div>
-        <div class="c-input">
-          <i class="fa-solid fa-phone"></i>
-          <label for="phone">Phone</label>
-          <input type="text" name="phone" placeholder="Enter your phone...">
-        </div>
-      </div>
-
-      <div class="c-consumerInfo__address">
-        <h2>Shipping Address</h2>
-        <div class="c-input">
-          <i class="fa-solid fa-user"></i>
-          <label for="name">Full name</label>
-          <input type="text" name="name" id="" placeholder="Enter you name...">
-          <div class="c-input"></div>
-        </div>
-
-        <div class="c-input">
-          <i class="fa-solid fa-house"></i>
-          <label for="address">Address</label>
-          <input type="text" name="address" id="" placeholder="Your address...">
-        </div>
-
-        <div class="c-input">
-          <i class="fa-solid fa-city"></i>
-          <label for="city">City</label>
-          <input type="text" name="city" id="" placeholder="Your city...">
-        </div>
-
-        <div class="c-consumerInfo__flex">
+        <div class="c-consumerInfo__contact">
+          <h2>Contact Information</h2>
           <div class="c-input">
-            <i class="fa-solid fa-earth-americas"></i>
-            <label for="country">Country</label>
-            <select name="country" id="" class="c-input">
-              <option value="" disabled selected hidden>Your country...</option>
-              <option value="venezuela">Venezuela</option>
-              <option value="Spain">Spain</option>
-            </select>
+            <i class="fa-solid fa-envelope"></i>
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="" placeholder="Enter you email...">
           </div>
+          <div class="c-input">
+            <i class="fa-solid fa-phone"></i>
+            <label for="phone">Phone</label>
+            <input type="text" name="phone" placeholder="Enter your phone...">
+          </div>
+        </div>
 
+        <div class="c-consumerInfo__address">
+          <h2>Shipping Address</h2>
+          <div class="c-input">
+            <i class="fa-solid fa-user"></i>
+            <label for="name">Full name</label>
+            <input type="text" name="name" id="" placeholder="Enter you name...">
+            <div class="c-input"></div>
+          </div>
 
           <div class="c-input">
-            <i class="fa-solid fa-location-dot"></i>
-            <label for="postal">Postal code</label>
-            <input type="text" name="postal" id="" placeholder="Your postal code...">
+            <i class="fa-solid fa-house"></i>
+            <label for="address">Address</label>
+            <input type="text" name="address" id="" placeholder="Your address...">
           </div>
-        </div> 
 
-      </div>
-        <div class="c-consumerInfo__save">
-          <input type="checkbox" name="checkbox" id="checkbox">
-          <label for="checkbox">Save this information for the next time</label>
+          <div class="c-input">
+            <i class="fa-solid fa-city"></i>
+            <label for="city">City</label>
+            <input type="text" name="city" id="" placeholder="Your city...">
+          </div>
+
+          <div class="c-consumerInfo__flex">
+            <div class="c-input">
+              <i class="fa-solid fa-earth-americas"></i>
+              <label for="country">Country</label>
+              <select name="country" id="" class="c-input">
+                <option value="" disabled selected hidden>Your country...</option>
+                <option value="venezuela">Venezuela</option>
+                <option value="Spain">Spain</option>
+              </select>
+            </div>
+
+
+            <div class="c-input">
+              <i class="fa-solid fa-location-dot"></i>
+              <label for="postal">Postal code</label>
+              <input type="text" name="postal" id="" placeholder="Your postal code...">
+            </div>
+          </div> 
+
+          <div class="c-consumerInfo__save">
+            <input type="checkbox" name="checkbox" id="checkbox">
+            <label for="checkbox">Save this information for the next time</label>
+          </div>
+          <button class="c-continueBtn">Continue</button>
         </div>
-        <button class="c-continueBtn">Continue</button>
       </div>
+
+
+
+      <div class="c-cart">
+        <h2>CheckOut</h2>
+        <div class="c-cart__item">
+          <img src="./photo1.png" alt="" class="c-item__photo">
+          <div class="c-item__text">
+            <h3>Vintage Backbag</h3>
+            <div class="c-item__price">
+              <p>$54.99</p>
+              <span>$94.99</span>
+            </div>
+          </div>
+          <div class="c-item__quantity">
+            <button id="minusBtnOne">-</button>
+            <span id="quantityOne">1</span>
+            <button id="addBtnOne">+</button>
+          </div>
+        </div>
+      
+        <div class="c-cart__item">
+          <img src="./photo2.png" alt="" class="c-item__photo">
+          <div class="c-item__text">
+            <h3>Levi Shoes</h3>
+            <div class="c-item__price">
+              <p>$74.99</p>
+              <span>$124.99</span>
+            </div>
+          </div>
+          <div class="c-item__quantity">
+            <button id="minusBtnTwo">-</button>
+            <span id="quantityTwo">1</span>
+            <button id="addBtnTwo">+</button>
+          </div>
+        </div>
+
+
+        <div class="c-cart__total">
+          <div class="c-total__divider"></div>
+          <div class="c-total__text">
+            <p>Shipping</p>
+            <span>$19</span>
+          </div>
+          <div class="c-total__divider"></div>
+          <div class="c-total__text">
+            <p>Total</p>
+            <span>$148.98</span>
+          </div>
+
+        </div>
+      </div>
+
     </div>
-
-
-
-    <div class="c-cart">
-      <h2>CheckOut</h2>
-      <div class="c-cart__item">
-        <img src="./photo1.png" alt="" class="c-item__photo">
-        <div class="c-item__text">
-          <h3>Vintage Backbag</h3>
-          <div class="c-item__price">
-            <p>$54.99</p>
-            <span>$94.99</span>
-          </div>
-        </div>
-        <div class="c-item__quantity">
-          <button>-</button>
-          <span>1</span>
-          <button>+</button>
-        </div>
-      </div>
-    
-      <div class="c-cart__item">
-        <img src="./photo2.png" alt="" class="c-item__photo">
-        <div class="c-item__text">
-          <h3>Levi Shoes</h3>
-          <div class="c-item__price">
-            <p>$74.99</p>
-            <span>$124.99</span>
-          </div>
-        </div>
-        <div class="c-item__quantity">
-          <button>-</button>
-          <span>1</span>
-          <button>+</button>
-        </div>
-      </div>
-
-
-      <div class="c-cart__total">
-        <div class="c-total__divider"></div>
-        <div class="c-total__text">
-          <p>Shipping</p>
-          <span>$19</span>
-        </div>
-        <div class="c-total__divider"></div>
-        <div class="c-total__text">
-          <p>Total</p>
-          <span>$148.98</span>
-        </div>
-
-      </div>
-    </div>
+      
 
     <footer> 
       <p>created by RickHalmoguera - devChallenges.io</p>
     </footer>
 
   </body>
+  <script src="./index.js"></script>
 </html> 
