@@ -26,30 +26,34 @@ label{
 }
 
 input{
-    
     border-radius: 12px;
-    border: 1px solid var(--gray-3, #828282);
+    border: 1px solid#828282;
     max-height: 52px;
     min-height: 40px;
     width: 100%;
+    padding-left: 4em;
     
 }
 
 select{
     border-radius: 12px;
-    border: 1px solid var(--gray-3, #828282);
+    border: 1px solid #828282;
     max-height: 52px;
     min-height: 40px;
     width: 100%;
-    text-align: center;
+    padding-left: 4em;
+    color: #828282;
 }
 
 .c-continueBtn{
     width: 166px;
     height: 54px;           
     border-radius: 12px;
-    background: var(--orange, #F2994A);
+    background:#F2994A;
     border: none;
+    color: #fff;
+    align-self: flex-end;
+
 }
 
 .c-input{
@@ -57,11 +61,41 @@ select{
 }
 
 .c-input i{
+    z-index: 1000;
     color: #828282;
     position: absolute;
     top: 70%;
     left: 2em;
     -ms-transform: translate(-70%, -70%);
     transform: translate(-70%, -70%);
+}
+
+.c-consumerInfo{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.c-consumerInfo__contact, .c-consumerInfo__address{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.c-consumerInfo__flex{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+}
+
+.c-consumerInfo__save{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1em;
+}
+
+#checkbox{
+    width: 21px;
+    height: 21px;
 }
 
