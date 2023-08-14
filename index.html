@@ -13,29 +13,55 @@
     <div class="c-consumerInfo">
       <div class="c-consumerInfo__contact">
         <h2>Contact Information</h2>
-        <label for="email">E-mail </label>
-        <input type="email" name="email" id="">
-        <label for="phone">Phone</label>
-        <input type="text" name="phone">
+        <div class="c-input">
+          <i class="fa-solid fa-envelope"></i>
+          <label for="email">E-mail</label>
+          <input type="email" name="email" id="">
+        </div>
+        <div class="c-input">
+          <i class="fa-solid fa-phone"></i>
+          <label for="phone">Phone</label>
+          <input type="text" name="phone">
+        </div>
       </div>
 
       <div class="c-consumerInfo__address">
         <h2>Shipping Address</h2>
-        <label for="name">Full name</label>
-        <input type="text" name="name" id="">
-        <label for="address">Address</label>
-        <input type="text" name="address" id="">
-        <label for="city">City</label>
-        <input type="text" name="city" id="">
+        <div class="c-input">
+          <i class="fa-solid fa-user"></i>
+          <label for="name">Full name</label>
+          <input type="text" name="name" id="">
+          <div class="c-input"></div>
+        </div>
+
+        <div class="c-input">
+          <i class="fa-solid fa-house"></i>
+          <label for="address">Address</label>
+          <input type="text" name="address" id="">
+        </div>
+
+        <div class="c-input">
+          <i class="fa-solid fa-city"></i>
+          <label for="city">City</label>
+          <input type="text" name="city" id="">
+        </div>
 
         <div class="c-consumerInfo__flex">
+          
           <label for="country">Country</label>
-          <select name="country" id="">
-            <option value="venezuela">Venezuela</option>
-            <option value="Spain">Spain</option>
+          <select name="country" id="" class="c-input">
+          <i class="fa-solid fa-earth-americas"></i>
+          <option value="venezuela">Venezuela</option>
+          <option value="Spain">Spain</option>
           </select>
-          <label for="postal">Postal code</label>
-          <input type="text" name="postal" id="">
+          
+          </select>
+
+          <div class="c-input">
+            <i class="fa-solid fa-location-dot"></i>
+            <label for="postal">Postal code</label>
+            <input type="text" name="postal" id="">
+          </div>
         </div> 
 
         <input type="checkbox" name="checkbox" id="">
